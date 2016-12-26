@@ -35,7 +35,7 @@ ProjectKit is [Carthage](https://github.com/Carthage/Carthage) compatible.
 3. Create a text file in that folder and name it `Cartfile`.
 4. Add the following line to the `Cartfile`:
 
-    `git "git@bitbucket.org:apparata/ProjectKit.git" "master"`
+    `git "git@github.com:apparata/ProjectKit.git" "master"`
 
 5. Then update using Carthage from the command line for whichever platform you want to build for:
 
