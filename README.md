@@ -41,4 +41,5 @@ ProjectKit is [Carthage](https://github.com/Carthage/Carthage) compatible.
 
     `carthage update`
 
-6. Make sure you check in `Cartfile.resolved`.
+6. Build result (`ProjectKit.framework`) is found in `Carthage/Build/Mac/`.
+7. Make sure you check in `Cartfile.resolved`.
