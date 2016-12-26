@@ -6,6 +6,8 @@ ProjectKit is a Swift framework for parsing Xcode project files.
 
 ## Example
 
+Here's an example that loads an Xcode project file and prints the name of all targets in the project.
+
 ```Swift
 import ProjectKit
 
@@ -16,6 +18,10 @@ do {
     let project = try XcodeProject(url: url)
 
     print(project)
+    
+    for (targetID, target) in project.nativeTargets {
+        print(target.name)
+    }
 
 } catch XcodeProjectError.failedToOpenProjectFile {
     print("Failed to open project file.")
@@ -43,3 +49,4 @@ ProjectKit is [Carthage](https://github.com/Carthage/Carthage) compatible.
 
 6. Build result (`ProjectKit.framework`) is found in `Carthage/Build/Mac/`.
 7. Make sure you check in `Cartfile.resolved`.
+8. Add ProjectKit.framework to your project.
