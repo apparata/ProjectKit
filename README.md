@@ -1,9 +1,12 @@
 # ProjectKit
+
 ProjectKit is a Swift framework for parsing Xcode project files.
 
 ## Example
 
 ```Swift
+import ProjectKit
+
 let url = URL(fileURLWithPath: "<YourProject>.pbxproj")
 
 do {
