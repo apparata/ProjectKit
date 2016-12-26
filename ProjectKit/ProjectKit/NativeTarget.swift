@@ -36,3 +36,10 @@ public class NativeTarget: Target, ProjectFileObject {
         super.init(id: id, object: object)
     }
 }
+
+extension NativeTarget: CustomStringConvertible {
+    
+    public var description: String {
+        return "NativeTarget(name: \(name ?? "N/A"))"
+    }
+}

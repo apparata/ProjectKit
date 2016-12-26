@@ -36,3 +36,10 @@ public class AggregateTarget: Target, ProjectFileObject {
         super.init(id: id, object: object)
     }
 }
+
+extension AggregateTarget: CustomStringConvertible {
+    
+    public var description: String {
+        return "AggregateTarget(name: \(name ?? "N/A"))"
+    }
+}
