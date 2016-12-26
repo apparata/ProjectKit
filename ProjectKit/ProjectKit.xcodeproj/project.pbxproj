@@ -33,6 +33,7 @@
 		5BABEA291E11A07A00AF902C /* TargetDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BABEA101E11A07A00AF902C /* TargetDependency.swift */; };
 		5BABEA2A1E11A07A00AF902C /* VariantGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BABEA111E11A07A00AF902C /* VariantGroup.swift */; };
 		5BABEA2B1E11A07A00AF902C /* XcodeProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BABEA121E11A07A00AF902C /* XcodeProject.swift */; };
+		5BABEA381E11A31100AF902C /* SourceTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BABEA371E11A31100AF902C /* SourceTree.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		5BABEA101E11A07A00AF902C /* TargetDependency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetDependency.swift; sourceTree = "<group>"; };
 		5BABEA111E11A07A00AF902C /* VariantGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VariantGroup.swift; sourceTree = "<group>"; };
 		5BABEA121E11A07A00AF902C /* XcodeProject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XcodeProject.swift; sourceTree = "<group>"; };
+		5BABEA371E11A31100AF902C /* SourceTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourceTree.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 			children = (
 				5BABEA081E11A07A00AF902C /* ObjectID.swift */,
 				5BABEA0A1E11A07A00AF902C /* ProjectFileObject.swift */,
+				5BABEA371E11A31100AF902C /* SourceTree.swift */,
 			);
 			name = Base;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				5BABEA1A1E11A07A00AF902C /* CopyFilesBuildPhase.swift in Sources */,
 				5BABEA171E11A07A00AF902C /* BuildRule.swift in Sources */,
 				5BABEA191E11A07A00AF902C /* ContainerItemProxy.swift in Sources */,
+				5BABEA381E11A31100AF902C /* SourceTree.swift in Sources */,
 				5BABEA181E11A07A00AF902C /* ConfigurationList.swift in Sources */,
 				5BABEA281E11A07A00AF902C /* Target.swift in Sources */,
 				5BABEA231E11A07A00AF902C /* ProjectFileObject.swift in Sources */,

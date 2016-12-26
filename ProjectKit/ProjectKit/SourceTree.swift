@@ -24,26 +24,21 @@
 
 import Foundation
 
-public class ObjectID {
+public enum SourceTree: String {
+    case absolute = "<absolute>"
     
-    public let id: String
+    /// The file path is relative to the group the file is in.
+    case group = "<group>"
     
-    public init(id: String) {
-        self.id = id
-    }
-}
-
-extension ObjectID: Equatable {
-
-    public static func ==(lhs: ObjectID, rhs: ObjectID) -> Bool {
-        return lhs.id == rhs.id
-    }
-}
-
-
-extension ObjectID: Hashable {
+    /// The file path is relative to the project path.
+    case projectPath = "SOURCE_ROOT"
     
-    public var hashValue: Int {
-        return id.hashValue
-    }
+    /// The file path is relative to the developer directory.
+    case developerDirectory = "DEVELOPER_DIR"
+    
+    /// The file path is relative to built products path.
+    case buildProducts = "BUILT_PRODUCTS_DIR"
+    
+    /// The file path is relative to SDK path.
+    case sdkRoot = "SDKROOT"
 }
