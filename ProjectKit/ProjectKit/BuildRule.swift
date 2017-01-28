@@ -61,9 +61,7 @@ public class BuildRule: ProjectFileObject {
         fileType = object["fileType"] as? String
         isEditable = object["isEditable"] as? String
         name = object["name"] as? String
-        if let outputFiles = object["outputFiles"] as? [FileReference.ID] {
-            self.outputFiles = outputFiles
-        }
+        outputFiles = decodeIDs(object["outputFiles"])
         if let outputFilesCompilerFlags = object["outputFilesCompilerFlags"] as? [String] {
             self.outputFilesCompilerFlags = outputFilesCompilerFlags
         }

@@ -28,7 +28,7 @@ public class ObjectID {
     
     public let id: String
     
-    public init(id: String) {
+    public required init(id: String) {
         self.id = id
     }
 }

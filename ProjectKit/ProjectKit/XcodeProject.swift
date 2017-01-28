@@ -92,9 +92,7 @@ public class XcodeProject {
         classes = project["classes"] as? NSDictionary ?? [:]
         objectVersion = Int(project["objectVersion"] as? String ?? "")
         objects = project["objects"] as? [String: NSDictionary] ?? [:]
-        if let rootObject = project["rootObject"] as? String {
-            self.rootObject = Project.ID(id: rootObject)
-        }
+        rootObject = decodeID(project["rootObject"])
         
         for (objectID, object) in objects {
             guard let type = object["isa"] as? String else { continue }

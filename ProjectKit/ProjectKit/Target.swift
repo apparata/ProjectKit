@@ -61,21 +61,13 @@ public class Target {
     public init(id: ID, object: NSDictionary) {
         self.id = id
         self.object = object
-        buildConfigurationList = object["buildConfigurationList"] as? ConfigurationList.ID
-        if let buildPhases = object["buildPhases"] as? [BuildPhase.ID] {
-            self.buildPhases = buildPhases
-        }
-        if let buildRules = object["buildRules"] as? [BuildRule.ID] {
-            self.buildRules = buildRules
-        }
-        if let dependencies = object["dependencies"] as? [TargetDependency.ID] {
-            self.dependencies = dependencies
-        } else {
-            self.dependencies = []
-        }
+        buildConfigurationList = decodeID(object["buildConfigurationList"])
+        buildPhases = decodeIDs(object["buildPhases"])
+        buildRules = decodeIDs(object["buildRules"])
+        dependencies = decodeIDs(object["dependencies"])
         name = object["name"] as? String
         productName = object["productName"] as? String
-        productReference = object["productReference"] as? FileReference.ID
+        productReference = decodeID(object["productReference"])
         productType = object["productType"] as? String
     }
 }

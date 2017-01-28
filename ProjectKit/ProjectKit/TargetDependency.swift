@@ -53,7 +53,7 @@ public class TargetDependency: ProjectFileObject {
     public init(id: ID, object: NSDictionary) {
         self.id = id
         self.object = object
-        target = object["target"] as? NativeTarget.ID
-        targetProxy = object["targetProxy"] as? ContainerItemProxy.ID
+        target = decodeID(object["target"])
+        targetProxy = decodeID(object["targetProxy"])
     }
 }

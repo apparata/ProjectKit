@@ -37,8 +37,6 @@ public class VariantGroup: FileElement, ProjectFileObject {
     
     public override init(id: ID, object: NSDictionary) {
         super.init(id: id, object: object)
-        if let children = object["children"] as? [FileElement.ID] {
-            self.children = children
-        }
+        children = decodeIDs(object["children"])
     }
 }

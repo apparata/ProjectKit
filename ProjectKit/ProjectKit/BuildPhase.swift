@@ -49,9 +49,7 @@ public class BuildPhase {
         self.id = id
         self.object = object
         buildActionMask = object["buildActionMask"] as? String
-        if let files = object["files"] as? [String] {
-            self.files = files.map { BuildFile.ID(id: $0) }
-        }
+        files = decodeIDs(object["files"])
         runOnlyForDeploymentPostprocessing = object["runOnlyForDeploymentPostprocessing"] as? String
     }
 }

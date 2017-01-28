@@ -53,9 +53,7 @@ public class ConfigurationList: ProjectFileObject {
     public init(id: ID, object: NSDictionary) {
         self.id = id
         self.object = object
-        if let buildConfigurations = object["buildConfigurations"] as? [BuildConfiguration.ID] {
-            self.buildConfigurations = buildConfigurations
-        }
+        buildConfigurations = decodeIDs(object["buildConfigurations"])
         defaultConfigurationIsVisible = object["defaultConfigurationIsVisible"] as? String
         defaultConfigurationName = object["defaultConfigurationName"] as? String
     }

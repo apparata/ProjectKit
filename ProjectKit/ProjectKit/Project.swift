@@ -88,22 +88,20 @@ public class Project: ProjectFileObject {
         if let attributes = object["attributes"] as? NSDictionary {
             self.attributes = attributes
         }
-        buildConfigurationList = object["buildConfigurationList"] as? ConfigurationList.ID
+        buildConfigurationList = decodeID(object["buildConfigurationList"])
         compatibilityVersion = object["compatibilityVersion"] as? String
         developmentRegion = object["developmentRegion"] as? String
         hasScannedForEncodings = object["hasScannedForEncodings"] as? String
         if let knownRegions = object["knownRegions"] as? [String] {
             self.knownRegions = knownRegions
         }
-        mainGroup = object["mainGroup"] as? Group.ID
+        mainGroup = decodeID(object["mainGroup"])
         if let projectReferences = object["projectReferences"] as? [NSDictionary] {
             self.projectReferences = projectReferences
         }
-        productRefGroup = object["productRefGroup"] as? Group.ID
+        productRefGroup = decodeID(object["productRefGroup"])
         projectDirPath = object["projectDirPath"] as? String
         projectRoot = object["projectRoot"] as? String
-        if let targets = object["targets"] as? [Target.ID] {
-            self.targets = targets
-        }
+        targets = decodeIDs(object["targets"])
     }
 }

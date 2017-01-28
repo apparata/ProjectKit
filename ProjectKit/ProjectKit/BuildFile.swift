@@ -52,7 +52,7 @@ public class BuildFile: ProjectFileObject {
     public init(id: ID, object: NSDictionary) {
         self.id = id
         self.object = object
-        fileRef = object["fileRef"] as? FileReference.ID
+        fileRef = decodeID(object["fileRef"])
         if let settings = object["settings"] as? NSDictionary {
             self.settings = settings
         }

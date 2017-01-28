@@ -65,7 +65,7 @@ public class ReferenceProxy: ProjectFileObject {
         name = object["name"] as? String
         fileType = object["fileType"] as? String
         path = object["path"] as? String
-        remoteRef = object["remoteRef"] as? ContainerItemProxy.ID
+        remoteRef = decodeID(object["remoteRef"])
         sourceTree = nil
         if let sourceTree = object["sourceTree"] as? String {
             self.sourceTree = SourceTree(rawValue: sourceTree)

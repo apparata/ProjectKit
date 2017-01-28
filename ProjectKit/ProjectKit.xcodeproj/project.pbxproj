@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B90404E1E3D024E001F65BC /* Decoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B90404D1E3D024E001F65BC /* Decoding.swift */; };
 		5BABE9F41E119FA400AF902C /* ProjectKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BABE9F21E119FA400AF902C /* ProjectKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5BABEA131E11A07A00AF902C /* AggregateTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BABE9FA1E11A07A00AF902C /* AggregateTarget.swift */; };
 		5BABEA141E11A07A00AF902C /* BuildConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BABE9FB1E11A07A00AF902C /* BuildConfiguration.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5B90404D1E3D024E001F65BC /* Decoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Decoding.swift; sourceTree = "<group>"; };
 		5BABE9EF1E119FA400AF902C /* ProjectKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ProjectKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BABE9F21E119FA400AF902C /* ProjectKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProjectKit.h; sourceTree = "<group>"; };
 		5BABE9F31E119FA400AF902C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -79,6 +81,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B90404C1E3D0241001F65BC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5B90404D1E3D024E001F65BC /* Decoding.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
 		5BABE9E51E119FA400AF902C = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +110,7 @@
 			children = (
 				5BABEA121E11A07A00AF902C /* XcodeProject.swift */,
 				5BABEA2D1E11A0C200AF902C /* Project File Objects */,
+				5B90404C1E3D0241001F65BC /* Utils */,
 				5BABEA2C1E11A09800AF902C /* Framework */,
 			);
 			path = ProjectKit;
@@ -303,6 +314,7 @@
 				5BABEA1C1E11A07A00AF902C /* FileReference.swift in Sources */,
 				5BABEA291E11A07A00AF902C /* TargetDependency.swift in Sources */,
 				5BABEA261E11A07A00AF902C /* ShellScriptBuildPhase.swift in Sources */,
+				5B90404E1E3D024E001F65BC /* Decoding.swift in Sources */,
 				5BABEA1D1E11A07A00AF902C /* FrameworksBuildPhase.swift in Sources */,
 				5BABEA211E11A07A00AF902C /* ObjectID.swift in Sources */,
 				5BABEA201E11A07A00AF902C /* NativeTarget.swift in Sources */,
@@ -484,6 +496,7 @@
 				5BABE9F91E119FA400AF902C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

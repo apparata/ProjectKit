@@ -62,9 +62,9 @@ public class ContainerItemProxy: ProjectFileObject {
     public init(id: ID, object: NSDictionary) {
         self.id = id
         self.object = object
-        containerPortal = object["containerPortal"] as? Project.ID
+        containerPortal = decodeID(object["containerPortal"])
         proxyType = object["proxyType"] as? String
-        remoteGlobalIDString = object["remoteGlobalIDString"] as? ObjectID
+        remoteGlobalIDString = decodeID(object["remoteGlobalIDString"])
         remoteInfo = object["remoteInfo"] as? String
     }
 }
