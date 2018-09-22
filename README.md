@@ -1,6 +1,6 @@
 # ProjectKit
 
-[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![SwiftPM compatible](https://img.shields.io/badge/SwiftPM-compatible-4BC51D.svg?style=flat)](https://swift.org/package-manager/) ![license](https://img.shields.io/badge/license-MIT-blue.svg) ![language Swift 4](https://img.shields.io/badge/language-Swift%204-orange.svg) ![platform macOS](https://img.shields.io/badge/platform-OSX-lightgrey.svg)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![SwiftPM compatible](https://img.shields.io/badge/SwiftPM-compatible-4BC51D.svg?style=flat)](https://swift.org/package-manager/) ![license](https://img.shields.io/badge/license-MIT-blue.svg) ![language Swift 4.2](https://img.shields.io/badge/language-Swift%204.2-orange.svg) ![platform macOS](https://img.shields.io/badge/platform-OSX-lightgrey.svg)
 
 ProjectKit is a Swift framework for parsing Xcode project files.
 
